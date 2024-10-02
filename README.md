@@ -2,6 +2,11 @@
 
 SocratiQ AI is a Streamlit application designed to be your personal tutor for mastering Data Structures and Algorithms (DSA). It utilizes the Socratic method to guide you through learning, asking questions that prompt critical thinking and problem-solving rather than providing direct answers. 
 
+**Demo**: https://socratiq-ai.streamlit.app/
+
+**Video**:
+<iframe height="300" width="500" src="https://youtube.com/embed/xfBAjSNMUb4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 ### Features:
 
 * **Interactive Chat Interface:** Ask questions about DSA concepts and receive insightful guidance from a Gemini-powered AI.
