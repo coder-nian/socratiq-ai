@@ -4,8 +4,7 @@ SocratiQ AI is a Streamlit application designed to be your personal tutor for ma
 
 **Demo**: https://socratiq-ai.streamlit.app/
 
-**Video**:
-<iframe height="300" width="500" src="https://youtube.com/embed/xfBAjSNMUb4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+**Video**: https://youtu.be/xfBAjSNMUb4
 
 ### Features:
 
