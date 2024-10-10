@@ -16,7 +16,7 @@ generation_config = {
 def query_gemini(user_input, model_config, session_history):
     # Assigning configs to the model
     model = genai.GenerativeModel(
-        model_name="gemini-1.5-pro", generation_config=generation_config, **model_config
+        model_name="gemini-1.5-flash", generation_config=generation_config, **model_config
     )
     # Initializing chat history
     history = []

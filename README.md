@@ -31,7 +31,6 @@ SocratiQ AI is a Streamlit application designed to be your personal tutor for ma
 #### 3. Run the Application:
 
 * Navigate to the project directory in your terminal.
-* Then navigate to the `pages` directory.
 * Run `streamlit run app.py` to start the application.
 
 #### 4. Start Learning:

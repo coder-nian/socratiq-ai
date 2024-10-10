@@ -1,8 +1,8 @@
 import streamlit as st
-from gemini import query_gemini
+from pages.gemini import query_gemini
 
 # Read Instructions
-with open("instructions/code_model_instructions.txt", "r") as f:
+with open("pages/instructions/code_model_instructions.txt", "r") as f:
     model_instructions = f.read()
 
 # Model Configuration
