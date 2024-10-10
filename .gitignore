@@ -4,4 +4,4 @@
 *.pot
 *.pyc
 __pycache__/
-main.py
+test.py
