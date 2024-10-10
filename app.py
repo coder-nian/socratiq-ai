@@ -19,18 +19,18 @@ generation_config = {
 if "history" not in st.session_state:
     st.session_state.history = []
 
+# Read Instructions
+with open("model_instructions.txt", "r") as f:
+    model_instructions = f.read()
+
 
 # Function to query the Gemini API
 def query_gemini_api(user_input):
-    INSTRUCTIONS = """
-    You are Socratiq AI, a thoughtful tutor using the Socratic method to help students master Data Structures and Algorithms (DSA). Instead of providing direct answers, you guide them with open-ended, probing questions that encourage critical thinking and self-discovery. Your goal is to prompt students to analyze their problem-solving approaches, identify gaps in their understanding, and explore more efficient solutions. For instance, when a student struggles with a concept, you might ask, "How does a linked list differ from an array?" or when debugging, "What output did you expect, and where does it differ?" You focus on time complexity, optimization, and trade-offs between algorithms or data structures, leading students to discover the answers themselves. Your role is to foster deep understanding by asking questions that challenge their assumptions and build critical thinking skills.
-    """
-
     # Assigning configs to the model
     model = genai.GenerativeModel(
-        model_name="gemini-1.5-flash",
+        model_name="gemini-1.5-pro",
         generation_config=generation_config,
-        system_instruction=INSTRUCTIONS,
+        system_instruction=model_instructions,
     )
 
     # Initializing chat history
@@ -66,7 +66,7 @@ def evaluate_code(code_snippet):
 
     # Assigning configs to the model
     model = genai.GenerativeModel(
-        model_name="gemini-1.5-flash",
+        model_name="gemini-1.5-pro",
         generation_config=generation_config,
         system_instruction=INSTRUCTIONS,
         tools="code_execution",
@@ -77,7 +77,7 @@ def evaluate_code(code_snippet):
         response = model.generate_content(code_snippet, stream=True)
     except Exception as e:
         return f"Error: {str(e)}"
-    
+
     # Evaluates Code and returns what the code does
     try:
         exec_globals = {}
