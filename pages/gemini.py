@@ -7,8 +7,8 @@ genai.configure(api_key=os.environ["GEMINI_API_KEY"])
 # Model configuration details
 generation_config = {
     "temperature": 0.5,
-    "top_p": 0.95,
-    "top_k": 64,
+    "top_p": 0.7,
+    "top_k": 40,
     "max_output_tokens": 8192,
 }
 

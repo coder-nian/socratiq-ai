@@ -83,6 +83,8 @@ if not st.session_state.chat_button_clicked:
 prompt = st.chat_input("Ask SocratiQ AI...") or st.session_state.get("prompt", "")
 
 if prompt:
+    # Whether the user clciks or not the suggestions should vanish
+    st.session_state.chat_button_clicked = True
     # Add user message to chat history
     st.session_state.chat_history.append({"role": "user", "content": prompt})
     # Display user message in chat message container
