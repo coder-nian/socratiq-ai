@@ -42,7 +42,7 @@ SocratiQ AI is a Streamlit application designed to be your personal tutor for ma
 
 * **Chat:** Type your question or DSA concept into the chat box.
 * **Code Evaluation:** Enter your Python code snippet into the code box. The AI will analyze your code and provide explanations and debugging suggestions.
-* **Problem Sets:** Select "Tasks" from the menu to access the Problem Set Generator. Choose a DSA topic and difficulty level to create personalized practice problems.
+* **Problem Sets:** Pass the DSA topic to the Problem Set Generator, and it will generate personalized practice problems based on the topic and difficulty level.
 
 ### Additional Notes:
 
