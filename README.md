@@ -4,6 +4,8 @@ SocratiQ AI is a Streamlit application designed to be your personal tutor for ma
 
 **Demo**: https://socratiq-ai.streamlit.app/
 
+**Hugging Face Demo**: https://huggingface.co/spaces/CoderNoah/SocratiQ-AI
+
 **Video**: https://youtu.be/xfBAjSNMUb4
 
 ### Features:
